@@ -18,7 +18,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SiteHeader />
-          {children}
+          <main className="pt-24 px-4 pb-8 max-w-7xl mx-auto">
+            {children}
+          </main>{" "}
+          {/*Caso eu queira um fazer variável a largura, colocar aqui max-w-7xl */}
         </ThemeProvider>
       </body>
     </html>
